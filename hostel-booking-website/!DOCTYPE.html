@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hostel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Hostel Booking Platform</h1>
+
+    <div class="container">
+
+        <h2>Register</h2>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="landlord">Landlord</option>
+        </select>
+
+        <button onclick="registerUser()">Register</button>
+
+        <hr>
+
+        <h2>Landlord - Add Hostel</h2>
+        <input type="text" id="hostelName" placeholder="Hostel Name">
+        <input type="text" id="location" placeholder="Location">
+        <input type="number" id="price" placeholder="Price">
+
+        <select id="subscription">
+            <option value="basic">Basic Subscription</option>
+            <option value="premium">Premium Subscription</option>
+        </select>
+
+        <button onclick="addHostel()">Add Hostel</button>
+
+        <hr>
+
+        <h2>Available Hostels</h2>
+        <div id="hostelList"></div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
